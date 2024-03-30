@@ -7,10 +7,12 @@ const config: Config = {
 		"./src/components/**/*.{js,ts,jsx,tsx,mdx}",
 		"./src/app/**/*.{js,ts,jsx,tsx,mdx}",
 	],
+	mode: "jit",
 	theme: {
 		extend: {
 			animation: {
 				aurora: "aurora 60s linear infinite",
+				fadein: "fadein 2s linear",
 			},
 			keyframes: {
 				aurora: {
@@ -20,6 +22,10 @@ const config: Config = {
 					to: {
 						backgroundPosition: "350% 50%, 350% 50%",
 					},
+				},
+				fadein: {
+					"0%": { opacity: "0" },
+					"100%": { opacity: "1" },
 				},
 			},
 			backgroundImage: {

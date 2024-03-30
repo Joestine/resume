@@ -1,10 +1,8 @@
-import { Hero } from "@/components/home/hero";
 import { Navbar } from "@/components/ui/navbar/navbar";
 
-export default function Home() {
+export default function About() {
 	return (
 		<>
-			<Hero />
 			<Navbar />
 		</>
 	);
