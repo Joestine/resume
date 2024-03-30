@@ -14,12 +14,7 @@ export const AuroraBackground = ({
 }: AuroraBackgroundProps) => {
 	return (
 		<main>
-			<div
-				className={cn(
-					"relative flex flex-col  h-[100vh] bg-zinc-900  text-slate-950 transition-bg animate-fadein",
-					className
-				)}
-				{...props}>
+			<div className={cn("relative flex flex-col  h-[100vh] bg-zinc-900  text-slate-950", className)} {...props}>
 				<div className="absolute inset-0 overflow-hidden">
 					<div
 						//   I'm sorry but this is what peak developer performance looks like // trigger warning
