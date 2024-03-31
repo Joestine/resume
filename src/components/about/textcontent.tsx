@@ -1,8 +1,8 @@
 export function TextContent() {
 	return (
-		<div className="text-right">
-			<h1 className="text-3xl md:text-8xl font-bold text-white antialiased relative">Hi! I&apos;m Justin. 👋</h1>
-			<p className="text-3xl text-zinc-300 mt-6">
+		<div className="text-center md:text-right">
+			<h1 className="text-5xl md:text-8xl font-bold text-white antialiased relative">Hi! I&apos;m Justin. 👋</h1>
+			<p className="text-xl md:text-3xl text-zinc-300 mt-6">
 				I am a enthusiastic Software Engineering Student in <br></br> Enschede with a passion for Frontend
 				Technology.
 				<br></br>Of course frontend is not the only thing I can do,<br></br> I do have experience in Backend

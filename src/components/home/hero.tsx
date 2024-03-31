@@ -1,5 +1,7 @@
 "use client";
 
+import { fadeInOut } from "@/utils/fadeinout";
+import { motion } from "framer-motion";
 import { IBM_Plex_Mono } from "next/font/google";
 import { TypewriterEffectSmooth } from "../ui/home/typewriter-effect";
 
@@ -41,7 +43,12 @@ const words = [
 
 export function Hero() {
 	return (
-		<div className={"flex flex-col items-center justify-center min-h-screen text-center"}>
+		<motion.div
+			initial="initial"
+			animate="animate"
+			exit="exit"
+			variants={fadeInOut}
+			className={"flex flex-col items-center justify-center min-h-screen text-center"}>
 			<header className="relative text-5xl md:text-8xl font-bold text-white text-center antialiased">
 				Justin van der Laan
 			</header>
@@ -49,6 +56,6 @@ export function Hero() {
 				Software Engineering Student<br></br>Front-end Development
 			</h2>
 			<TypewriterEffectSmooth words={words} className="mt-32"></TypewriterEffectSmooth>
-		</div>
+		</motion.div>
 	);
 }

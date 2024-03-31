@@ -1,6 +1,10 @@
-import { HoverEffect } from "@/components/ui/contact/card-hover-effect";
+"use client";
 
-export const channels = [
+import { HoverEffect } from "@/components/contact/card-hover-effect";
+import { fadeInOut } from "@/utils/fadeinout";
+import { motion } from "framer-motion";
+
+const channels = [
 	{
 		title: "LinkedIn",
 		description: "The professional Social Media!",
@@ -25,8 +29,13 @@ export const channels = [
 
 export default function Contact() {
 	return (
-		<div className="max-w-5xl mx-auto my-32 px-8">
+		<motion.div
+			initial="initial"
+			animate="animate"
+			exit="exit"
+			variants={fadeInOut}
+			className="max-w-5xl mx-auto my-32 px-8">
 			<HoverEffect items={channels}></HoverEffect>
-		</div>
+		</motion.div>
 	);
 }

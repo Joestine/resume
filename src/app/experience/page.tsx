@@ -1,4 +1,8 @@
+"use client";
+
 import { BentoGrid, BentoGridItem } from "@/components/experience/bento-grid";
+import { fadeInOut } from "@/utils/fadeinout";
+import { motion } from "framer-motion";
 
 const Skeleton = () => (
 	<div className="flex flex-1 w-full h-2/3 min-h-[6rem] rounded-xl bg-dot-white/[0.2] [mask-image:radial-gradient(ellipse_at_center,white,transparent)]  border border-white/[0.2] bg-black"></div>
@@ -47,17 +51,19 @@ const items = [
 
 export default function Experience() {
 	return (
-		<BentoGrid className="px-12 pt-8">
-			{items.map((item, i) => (
-				<BentoGridItem
-					key={i}
-					title={item.title}
-					description={item.description}
-					header={item.header}
-					className={i === 4 || i === 5 || i === 6 || i === 7 ? "md:col-span-2" : ""}
-				/>
-			))}
-			;
-		</BentoGrid>
+		<motion.div initial="initial" animate="animate" exit="exit" variants={fadeInOut} className="h-fit">
+			<BentoGrid className="px-12 pt-8 h-full">
+				{items.map((item, i) => (
+					<BentoGridItem
+						key={i}
+						title={item.title}
+						description={item.description}
+						header={item.header}
+						className={i === 4 || i === 5 || i === 6 || i === 7 ? "md:col-span-2" : ""}
+					/>
+				))}
+				;
+			</BentoGrid>
+		</motion.div>
 	);
 }

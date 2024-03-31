@@ -9,7 +9,7 @@ interface PortraitImageProps {
 
 export function PortraitImage({ src, width, alt }: PortraitImageProps) {
 	return (
-		<BackgroundGradient containerClassName="w-fit rounded-[22px] w-fit bg-zinc-900">
+		<BackgroundGradient containerClassName="rounded-[22px] h-fit bg-zinc-900">
 			<Image src={src} width={width} alt={alt} className="rounded-[22px]" />
 		</BackgroundGradient>
 	);
