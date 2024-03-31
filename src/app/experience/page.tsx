@@ -51,7 +51,7 @@ const items = [
 
 export default function Experience() {
 	return (
-		<motion.div initial="initial" animate="animate" exit="exit" variants={fadeInOut} className="h-fit">
+		<motion.div initial="initial" animate="animate" exit="exit" variants={fadeInOut} className="h-fit pt-16 md:p-0">
 			<BentoGrid className="px-12 pt-8 h-full">
 				{items.map((item, i) => (
 					<BentoGridItem

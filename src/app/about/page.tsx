@@ -13,7 +13,7 @@ export default function About() {
 			animate="animate"
 			exit="exit"
 			variants={fadeInOut}
-			className="flex flex-col md:flex-row md:justify-center p-12 pb-32 md:p-0 items-center gap-8 md:gap-32 md:h-screen">
+			className="flex flex-col h md:flex-row md:justify-center p-12 mt-32 md:m-0 md:p-16 items-center gap-8 md:gap-32 md:h-screen">
 			<PortraitImage src={portrait} width={520} alt="Portrait Image of Justin" />
 			<TextContent />
 		</motion.div>
