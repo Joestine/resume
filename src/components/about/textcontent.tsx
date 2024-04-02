@@ -6,7 +6,7 @@ export function TextContent() {
 				I am a enthusiastic Software Engineering Student in <br></br> Enschede with a passion for Frontend
 				Technology.
 				<br></br>Of course frontend is not the only thing I can do,<br></br> I do have experience in Backend
-				Tech aswell!<br></br>In my spare time I love to work on working on <br></br>modern and clean-looking web
+				Tech aswell!<br></br>In my spare time I love to work on <br></br>modern and clean-looking web
 				interfaces.
 				<br></br> <br></br>That&apos;s not all, I also like to blow steam off with sports,<br></br> or doing fun
 				stuff like going out for drinks!
