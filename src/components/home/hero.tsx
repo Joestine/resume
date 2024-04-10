@@ -7,39 +7,20 @@ import { TypewriterEffectSmooth } from "../ui/home/typewriter-effect";
 
 const ibm_plex_mono = IBM_Plex_Mono({ weight: ["700"], subsets: ["latin"] });
 
-const words = [
-	{
-		text: "A",
-	},
-	{
-		text: "Developer",
-	},
-	{
-		text: "who",
-	},
-	{
-		text: "knows",
-	},
-	{
-		text: "his",
-	},
-	{
-		text: "way",
-	},
-	{
-		text: "between",
-	},
-	{
-		text: "the",
-	},
-	{
-		text: "<html>",
-		className: ibm_plex_mono.className,
-	},
-	{
-		text: "tags.",
-	},
-];
+const words: { text: string; className?: string }[] = [
+	"A",
+	"Developer",
+	"who",
+	"knows",
+	"his",
+	"way",
+	"between",
+	"the",
+	"<html>",
+	"tags.",
+].map((text) => ({ text }));
+
+words[words.length - 2].className = ibm_plex_mono.className;
 
 export function Hero() {
 	return (
